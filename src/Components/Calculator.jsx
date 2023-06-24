@@ -56,13 +56,13 @@ const Counter = () => {
   return (
     <div className='h-screen font-pop flex justify-center items-center'>
       <div className='border rounded-br-[150px] rounded-3xl bg-gray-100 shadow-gray-400 shadow-lg'>
-        <div className='flex gap-6 p-6 md:px-8 md:py-10 sm:px-5 sm:py-9'>
+        <div className='flex gap-6 px-4 py-6 md:px-8 md:py-10 sm:px-5 sm:py-9'>
 
           {/* Input Day */}
           <div className=''>
-            <h3 className='mb-2 text-sm font-light text-black'>DAY</h3>
+            <h3 className='mb-3 ml-[2px] text-xs font-light text-black'>DAY</h3>
             <input
-              className='h-14 w-[100px] sm:w-[160px] pl-4 border rounded outline-none'
+              className='h-12 w-[90px] sm:w-[160px] pl-4 border rounded outline-none'
               type='number'
               placeholder='DD'
               value={day}
@@ -85,9 +85,9 @@ const Counter = () => {
 
           {/* Input Month  */}
           <div className='flex-col'>
-            <h3 className='mb-2 text-sm font-light text-black'>MONTH</h3>
+            <h3 className='mb-3 ml-[2px] text-xs font-light text-black'>MONTH</h3>
             <input
-              className='h-14 w-[100px] sm:w-[160px] pl-4 border rounded outline-none'
+              className='h-12 w-[90px] sm:w-[160px] pl-4 border rounded outline-none'
               type='number'
               placeholder='MM'
               value={month}
@@ -111,9 +111,9 @@ const Counter = () => {
 
           {/* Input Year */}
           <div className='flex-col'>
-            <h3 className='mb-2 text-sm font-light text-black'>YEAR</h3>
+            <h3 className='mb-3 ml-[2px] text-xs font-light text-black'>YEAR</h3>
             <input
-              className='h-14 w-[100px] sm:w-[160px] pl-4 border rounded outline-none'
+              className='h-12 w-[90px] sm:w-[160px] pl-4 border rounded outline-none'
               type='number'
               placeholder='YY'
               value={year}
@@ -137,8 +137,8 @@ const Counter = () => {
         </div>
 
         {/* Calculate Button & Results */}
-        <div className='mt-2 relative'>
-          <div className='absolute -top-8 right-[170px] sm:right-0'>
+        <div className='mt-3 relative'>
+          <div className='absolute -top-8 right-[160px] sm:right-0'>
             <button
               className='bg-purple-600 w-12 h-12 sm:w-14 sm:h-14 p-3 mt-2 rounded-full'
               onClick={calculateAge}
@@ -147,7 +147,7 @@ const Counter = () => {
             </button>
           </div>
         </div>
-        <div className='p-8 border-gray-500 border-t-2'>
+        <div className='p-5 border-gray-500 border-t-2 mb-2'>
           <p className='text-4xl sm:text-5xl font-bold text-black italic'>
             <span className='text-purple-600'>{years}</span> years
           </p>
